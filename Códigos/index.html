@@ -1,43 +1,112 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
     <style>
+        h3  {
+            color: rgb(121, 136, 123);
+        }
+        h4 {
+            color: rgb(205, 205, 205);
+        }
         h1 {
             color: rgb(130, 130, 250);
-            font-size: 2em;
         }
         p {
             color: rgb(140, 223, 140);
-            font-size: 1.2em;
+            font-size: 1.15em;
         }
         body {
             background-color: #000000;
             font-family: Arial, sans-serif;
             margin: 20px;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <h1>Node</h1>
+    <h1>JavaScript</h1>
     <p>node.js é uma plataforma de desenvolvimento que permite executar JavaScript no lado do servidor.</p>
-    <p>É amplamente utilizado para criar aplicações web escaláveis e de alto desempenho.</p>
     <p>typeof serve para verificar o tipo da variável</p>
-</body>
-<script>
-    // Exibe uma mensagem de alerta
-    window.alert("Olá, mundo!");
-    // Mensagem no console do navegador
-    console.log("Mensagem no console");
-    // Ok e Cancel
-    window.confirm("Você está gostando do curso?");
-    // Campo de entrada para o usuário
-    window.prompt("Qual é o seu nome?");
+    <p>window é um objeto global que representa a janela do navegador</p>
 
-    var nome = "Adriel";
-    const idade = 20;
-    let cidade = "São Paulo";
+    <h3>Para realizar conversão de dados de uma variável</h3>
+    <h4>para números usa-se:</h4>
+    <ul>
+        <li>Number(n) - número</li>
+        <li>Number.parseInt(n) - número inteiro</li>
+        <li>Number.parseFloat(n) - número real</li>
+        <li>String(n) - cadeia</li>
+        <li>n.toString() - cadeia</li>
+        <li>Boolean(n) - booleano</li>
+        <li>n.toFixed(2) - número com duas casas decimais</li>
+        <li>n.toPrecision(3) - número com três casas decimais</li>
+        <li>n.toExponential(2) - número em notação científica</li>
+    </ul>
+    <h4>para strings usa-se:</h4>
+    <ul>
+        <li>n.length - retorna o tamanho da string</li>
+        <li>n[0] - retorna o primeiro caractere da string</li>
+        <li>n.toUpperCase() - transforma em maiúsculas</li>
+        <li>n.toLowerCase() - transforma em minúsculas</li>
+        <li>n.charAt(0) - retorna o primeiro caractere</li>
+        <li>n.indexOf('a') - retorna a posição do caractere 'a'</li>
+        <li>n.replace('a', 'b') - substitui 'a' por 'b'</li>
+        <li>n.split(',') - divide a string em um array usando vírgula como separador</li>
+        <li>n.trim() - remove espaços no início e no final da string</li>
+    </ul>
+    <p>template literals - string que interage com variáveis diretamente dentro da string.</p>
+    <p>`O meu nome é ${nome}`</p>
+
+    <h3>Operadores</h3>
+    <h4>Aritméticos</h4>
+    <ul>
+        <li>n-- ou n++ tem a mesma função que n+=1 e n-=1</li>
+    </ul>
+    <h4>Relacionais</h4>
+    <ul>
+        <li>== - igualdade por valor/valores iguais</li>
+        <li>=== - igualdade por tipo/valores idênticos</li>
+        <li>!= - diferença por valor/valores diferentes</li>
+        <li>!== - diferença por tipo/valores não idênticos</li>
+    </ul>
+    <h4>Lógicos</h4>
+    <ul>
+        <li>! - Negação/"NÃO"</li>
+        <li>&& - Conjunção/"E"</li>
+        <li>|| - Disjunção/"OU"</li>
+    </ul>
+    <h4>Operador Ternário</h4>
+    <ul>
+        <li>? :  - operador que representa a função if/else: <br>
+            [teste lógico]?["valor se verdadeiro"]:["valor se falso"]<br>
+            ex.: (media > 7) ?"APROVADO":"REPROVADO"</li>
+    </ul>
+
+    <hr>
+
+    <h1>Funções importântes</h1>
+    <h4>Exibir o número em formatação (R$ X.XXX,XX)</h4>
+    <ul>
+        <li>document.write(sal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))</li>
+    </ul>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </body>
+<script>
+    /*
+    var nome = window.prompt("Qual é o seu nome?");
+    window.alert('É um prazer te conhecer, ' + nome + '!');
+    */
+    /*
+    var n2 = Number(window.prompt("Digite um número: "));
+    var n1 = Number(window.prompt("Digite outro número: "));
+    var soma = n1 + n2;
+    window.alert(`A soma dos números é: ${soma}`);
+    console.log('O tipo da variável nome é: ' + typeof nome);
+    console.log('O tipo da variável window é: ' + typeof window);
+    */
 </script>
 </html>
