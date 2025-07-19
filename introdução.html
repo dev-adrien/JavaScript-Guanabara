@@ -93,20 +93,49 @@
         <li>document.write(sal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))</li>
     </ul>
 
+    <hr>
+
+    <h1>DOM</h1>
+    <h3>Árvore DOM</h3>
+    <ul>
+        <li>
+            window: Objeto global (a janela do navegador).
+            <ul>
+                <li>location</li>
+                <li>history</li>
+                <li>
+                    document: O HTML da sua página.
+                    <ul>
+                        <li>
+                            html: Raiz do conteúdo.
+                            <ul>
+                                <li>head: Metadados (title, meta).</li>
+                                <li>body: Conteúdo visível (h1, p, etc.).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <h3>Manipulação do DOM</h3>
+    <ol>
+        <li>Marca</li>
+        <ul><li>document.getElementByTagName('')</li></ul>
+        <li>ID</li>
+        <ul><li>document.getElementById('')</li></ul>
+        <li>Nome</li>
+        <ul><li>document.getElementsByName('')</li></ul>
+        <li>Classe</li>
+        <ul><li>document.getElementsByClassName('')</li></ul>
+        <li>Seletor</li>
+        <ul><li>document.querySelector('')</li></ul>
+        <li>Seletor de múltiplos elementos</li>
+        <ul><li>document.querySelectorAll('')</li></ul>
+    </ol>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </body>
 <script>
-    /*
-    var nome = window.prompt("Qual é o seu nome?");
-    window.alert('É um prazer te conhecer, ' + nome + '!');
-    */
-    /*
-    var n2 = Number(window.prompt("Digite um número: "));
-    var n1 = Number(window.prompt("Digite outro número: "));
-    var soma = n1 + n2;
-    window.alert(`A soma dos números é: ${soma}`);
-    console.log('O tipo da variável nome é: ' + typeof nome);
-    console.log('O tipo da variável window é: ' + typeof window);
-    */
+
 </script>
 </html>
