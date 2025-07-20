@@ -6,7 +6,7 @@
     <title>04</title>
     <style>
         body {
-            background-color: #000000;
+            background-color: #0e024f;
             font-family: Arial, sans-serif;
             margin: 20px;
             color: white;
@@ -15,12 +15,29 @@
     </style>
 </head>
 <body>
-    
+    <div>
+        <h1>Título da minha página!!!</h1>
+        <p id="id">paragráfo normal</p>
+        <h1 class="titulo">Título 2</h1>
+    </div>
 </body>
 <script>
     var p = document.getElementsByTagName('p')[0];
     p.style.color = 'red';
+    document.getElementById('id').innerHTML = 'parágrafo alterado';
+    p.innerText = 'parágrafo alterado com innerText';
+    p.innerHTML = '<strong>parágrafo alterado com innerHTML</strong>';
     var corpo = document.body;
-    corpo.style.backgroundColor = 'blue';
+    corpo.style.backgroundColor = 'black';
+    // document.getElementsByClassName('titulo')[0].style.color = 'green';
+    var h1 = document.querySelector('h1');
+    h1.style.color = 'blue';
+    h1.innerText = 'Título alterado com querySelector';
+    // var titulo = document.querySelector('.titulo');
+    var t = document.querySelector('h1.titulo') // o h1 é opcional
+    t.style.color = 'green';
+    t.innerHTML = '<em>Título alterado com querySelector</em>';
+    t.style.fontSize = '1.0em';
+    t.style.textAlign = 'center';
 </script>
 </html>

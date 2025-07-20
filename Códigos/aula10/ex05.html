@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05</title>
+    <style>
+        body {
+            background-color: #000000;
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            color: white;
+            font-size: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div {
+            /*Como centraliza uma div*/
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            width: 40vw;
+            height: 20vh;
+            background-color: #333333;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu()" -->
+    <div id="area">
+        Interaja
+    </div>
+    <script>
+        var a = document.getElementById('area');
+        
+        /*
+        a.addEventListener('click', clicar);
+        a.addEventListener('mouseenter', entrou);
+        a.addEventListener('mouseout', saiu);
+        */
+        a.onclick = clicar;
+        a.onmouseenter = entrou;
+        a.onmouseout = saiu;
+
+        function clicar() {
+            a.innerText = 'Clicou!';
+        }
+
+        function entrou() {
+            a.style.backgroundColor = 'green';
+            a.innerText = 'Entrou!';
+        }
+        
+        function saiu() {
+            a.style.backgroundColor = 'red';
+            a.innerText = 'Saiu!';
+        }
+
+    </script>
+</body>
+</html>
