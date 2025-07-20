@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03</title>
+    <style>
+        body {
+            background-color: #000000;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: white;
+            font-size: 2em;;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+<script>
+    var nome = window.prompt("Qual é o seu nome?");
+    document.write(`É um prazer te conhecer, ${nome}!<br>`);
+    document.write(`Em maiúsculas: ${nome.toUpperCase()}</br>
+                    Em minúsculas: ${nome.toLowerCase()}<br>`);
+
+    var sal = Number.parseFloat(window.prompt("Digite o seu salário:"));
+    document.write(`O seu salário é: R$ ${sal.toFixed(2).replace('.', ',')}<br>`);
+
+    // document.write(`O seu salário com aumento de 15% é: R$ ${(sal * 1.15).toFixed(2).replace('.', ',')}`);
+
+    document.write(sal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))
+</script>
+</html>
