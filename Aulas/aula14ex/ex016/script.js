@@ -4,7 +4,7 @@ function contar() {
     let passo = document.getElementById('passo')
     let res = document.querySelector('#res')
     
-    if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
+    if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0 || inicio.value == fim.value) {
         alert('Impossível contar! Verifique os valores e tente novamente!')
     } else {
         res.innerHTML = `Contando: <br>`
