@@ -6,6 +6,7 @@ body {
 header {
     color: #ffffff;
     text-align: center;
+    ;
 }
 
 section {
@@ -15,7 +16,6 @@ section {
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 3px 3px 10px rgba(46, 6, 6, 0.35);
-    text-align: center;
 }
 
 footer {
@@ -23,14 +23,4 @@ footer {
     padding: 10px;
     color: #ffffff;
     font-style: italic;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 100%;
-}
-
-div {
-    padding: 10px;
 }
