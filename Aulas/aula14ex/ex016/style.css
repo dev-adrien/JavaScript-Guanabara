@@ -24,3 +24,7 @@ footer {
     color: #ffffff;
     font-style: italic;
 }
+
+input {
+    margin: 15px;
+}
