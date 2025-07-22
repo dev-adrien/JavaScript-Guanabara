@@ -28,3 +28,8 @@ footer {
 div#res {
     text-align: center;
 }
+
+#foto {
+    border-radius: 100%;
+    padding: 10px;
+}
