@@ -17,22 +17,26 @@ function adicionar() {
         numeros.push(n)
 
         var opt = document.createElement('option')
-        opt.value = n
         opt.text = `Valor ${n} adicionado.`
-        opt.id = numeros.length -1
         slc.appendChild(opt)
     }
+    num.value = ''
+    num.focus()
     control = false
 }
 
 finalizar = () => {
-    control = true
-    let soma = numeros.reduce((total, valor) => total + valor, 0)
-    let media = soma / numeros.length
-
-    res.innerHTML = `Ao todo, temos <strong>${numeros.length}</strong> números cadastrados.<br>`
-    res.innerHTML += `O maior valor informado foi <strong>${Math.max(...numeros)}</strong>.<br>`
-    res.innerHTML += `O menor valor informado foi <strong>${Math.min(...numeros)}</strong>.<br>`
-    res.innerHTML += `Somando todos os valores, temos <strong>${soma}</strong>.<br>`
-    res.innerHTML += `A média de todos os valores digitados é <strong>${media.toFixed(2)}</strong>.`
+    if (numeros.length == 0) {
+        alert('Digite valores primeiro para analisar.')
+    } else {
+        control = true
+        let soma = numeros.reduce((total, valor) => total + valor, 0)
+        let media = soma / numeros.length
+    
+        res.innerHTML = `Ao todo, temos <strong>${numeros.length}</strong> números cadastrados.<br>`
+        res.innerHTML += `O maior valor informado foi <strong>${Math.max(...numeros)}</strong>.<br>`
+        res.innerHTML += `O menor valor informado foi <strong>${Math.min(...numeros)}</strong>.<br>`
+        res.innerHTML += `Somando todos os valores, temos <strong>${soma}</strong>.<br>`
+        res.innerHTML += `A média de todos os valores digitados é <strong>${media.toFixed(2)}</strong>.`
+    }
 }
