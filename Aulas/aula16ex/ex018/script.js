@@ -9,8 +9,10 @@ function adicionar() {
         numeros = []
         res.innerHTML = ('')
     }
+    
     let num = document.getElementById('num')
     let n = Number(num.value)
+
     if (num.value.length == 0 || num.value > 100 || num.value < 1 || numeros.includes(n)) {
         alert("Digite um número válido!")
     } else {
